@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Товар из каталога GOLF EXPERT: фотографии, описание и консультация по подбору.">
+  <link rel="icon" href="data:,">
+  <title>Товар — GOLF EXPERT</title>
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=7">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <script src="js/catalog-data.js" defer></script>
+  <script src="js/main.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержимому</a>
+  <div class="site-shell">
+    <header class="site-header is-scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand-lockup" href="index.html" aria-label="GOLF EXPERT / Golden Rocket — главная"><span class="brand-main">GOLF EXPERT</span><span class="brand-secondary">Golden Rocket</span></a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Основная навигация" data-nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html#simulators">Симуляторы</a></li>
+            <li><a class="nav-link" href="index.html#equipment">Оборудование</a></li>
+            <li><a class="nav-link" href="index.html#service">Custom &amp; Service</a></li>
+            <li><a class="nav-link" href="catalog.html" aria-current="page">Каталог</a></li>
+            <li><a class="nav-link" href="index.html#consultation">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions"><button class="button button--accent" type="button" data-dialog-open="Клюшки MIURA">Получить консультацию</button><button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>Меню</button></div>
+      </div>
+    </header>
+
+    <main id="main" data-product-page>
+      <section class="product-detail">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><a href="catalog.html">Каталог</a><span>/</span><span aria-current="page" data-product-breadcrumb>Товар</span></nav>
+
+          <div class="product-detail-grid">
+            <div class="product-gallery" aria-label="Галерея товара">
+              <div class="gallery-thumbs" data-product-thumbs></div>
+              <div class="gallery-main" data-gallery-main-container></div>
+            </div>
+
+            <div class="product-summary">
+              <p class="eyebrow"><span class="mock-badge" data-product-brand>Бренд</span> · <span data-product-category>Категория</span></p>
+              <h1 data-product-name>Товар</h1>
+              <p class="product-summary__lead" data-product-description></p>
+              <div class="price-area"><span class="price-label">Условия заказа</span><span class="price-value">Цену, доступность и условия заказа уточнит менеджер.</span></div>
+              <div class="button-row"><button class="button button--accent" type="button" data-dialog-open="Товар" data-product-dialog>Получить консультацию</button><a class="button" href="catalog.html">Вернуться в каталог</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <div class="container product-cta product-cta--mineral reveal">
+          <div><p class="eyebrow">Персональная консультация</p><h2><span>Поможем уточнить</span><span>детали товара</span></h2></div>
+          <button class="button button--accent" type="button" data-dialog-open="Консультация по товару">Уточнить детали</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand"><span class="brand-main">GOLF EXPERT</span><span class="brand-secondary">Golden Rocket</span><p>Премиальные решения для гольфа. Беларусь, Россия, Казахстан и другие страны СНГ.</p></div>
+        <nav class="footer-column" aria-label="Направления"><h3>Направления</h3><ul><li><a href="index.html#simulators">Симуляторы</a></li><li><a href="index.html#equipment">Оборудование</a></li><li><a href="index.html#service">Custom &amp; Service</a></li></ul></nav>
+        <nav class="footer-column" aria-label="Навигация в подвале"><h3>Навигация</h3><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#consultation">Консультация</a></li></ul></nav>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="consultation-dialog" data-dialog aria-labelledby="dialog-title">
+    <div class="dialog-card"><button class="dialog-close" type="button" data-dialog-close>Закрыть</button><p class="eyebrow">Консультация / <span class="dialog-context" data-dialog-context>Клюшки MIURA</span></p><h2 id="dialog-title">Расскажите о задаче.</h2><p class="form-intro">Оставьте контакт — мы уточним детали и предложим подходящее решение.</p><form class="consultation-form" data-prototype-form><input type="hidden" name="context" value="Клюшки MIURA" data-context-input><div class="form-row"><label class="field"><span class="field-label">Имя</span><input type="text" name="name" autocomplete="name" required></label><label class="field"><span class="field-label">Телефон или мессенджер</span><input type="text" name="contact" autocomplete="tel" required></label></div><label class="field"><span class="field-label">Комментарий</span><textarea name="message"></textarea></label><small>Демонстрационная форма: данные никуда не отправляются.</small><button class="button button--accent button--wide" type="submit">Отправить запрос</button><p class="form-status" role="status" aria-live="polite" data-form-status></p></form></div>
+  </dialog>
+</body>
+</html>
